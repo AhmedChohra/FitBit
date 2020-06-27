@@ -1,0 +1,642 @@
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    margin: 0 auto;
+    border-radius:28px;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.363);
+    background-color: rgba(59, 189, 240, 0.281);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.txt {
+    letter-spacing: -1px;
+}
+
+.title{
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-size: 29px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pink-font {
+    color: #F29492;
+}
+
+.box-border {
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.37);
+}
+
+.img-size {
+    max-height: 350px;
+    width: auto;
+}
+
+header {
+    background-image:
+        linear-gradient(55deg, rgba(242, 148, 146,90%)30%, rgba(59,188,240,90%)100%),
+        url("../img/03-Montre-560x420.jpg");
+    background-size: cover;
+    background-position: center;  
+    color: white;
+    flex-direction: column;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    background-size: 100%;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.383);
+}
+
+header .burger {
+    display: none;
+}
+
+header .menu {
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 40px;
+}
+
+header .menu img {
+    max-height: 50px;
+    width: auto;
+}
+
+header .menu ul {
+    display: flex;
+    align-items: center;
+}
+
+header .menu ul li {
+    margin-left: 70px;
+    font-size: 17px;
+}
+
+header .txt {
+    padding: 100px 0 100px;
+    align-items: center;
+    flex-direction: column;
+    margin:0px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    padding-bottom: 0;
+    margin: 0px;
+}
+
+header .txt h2 {
+    font-size: 33px;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+header .txt a {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 1px solid;
+    margin-top: -3px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+article#description {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 10px;
+    align-items: center;
+}
+
+article#description div {
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+article#description p {
+    padding-right: -10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+section#avantage {
+    margin-bottom: 100px;
+}
+
+section#avantage h2 {
+    padding-top: 50px;
+}
+
+section#avantage img{
+    max-height: 60px;
+    width: auto;
+} 
+
+section#avantage ul{
+    flex-wrap: wrap;
+    padding: 0px 15px 30px;
+
+}
+
+section#avantage li{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10px;
+    width: 25%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section#avantage h3{
+    text-transform: capitalize;
+}
+
+section#fonction h2 {
+    text-align: center; 
+    position: relative;
+}
+
+section#fonction h2::after {
+    content: '';
+    width: 470px;
+    height: 30px;
+    background: rgba(242, 148, 146, 0.781);
+    position: absolute;
+    margin-top: 33px;
+    right: 220px;
+    border-radius: 28px;
+    z-index: -10;
+    display: inline-block;
+}
+
+section#fonction h2::before { 
+    content: '';
+    width: 185px;
+    height: 30px;
+    background: #114357b4;
+    position: absolute;
+    margin-top: 53px;
+    right: 175px;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    display: inline-block;
+}
+
+section#fonction h3{
+    font-size: 23px
+}
+
+section#fonction ul {
+    margin-top: 50px;
+}
+
+section#fonction li {
+    flex-direction: row;
+    padding: 50px 0px;
+    align-items: center;
+}
+
+section#fonction li:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+section#fonction li div {
+    padding: 60px 60px;
+}
+
+section#app {
+    display: row;
+    margin: 110px auto;
+    padding: 30px auto;
+}
+
+section#app article{
+    padding: 60px 15px 40px;
+}
+
+section#app img{
+    max-height: 500px;
+    width: auto;
+    margin: -80px 7px 0;
+}
+
+section#app a {
+    background-color: #F29492;
+    margin-bottom: 30px;
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.144);
+}
+
+section#app a:hover {
+    background-color: #1143576b;  
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.363);
+}
+
+footer {
+    background: linear-gradient(55deg, rgb(242, 148, 146)10%, rgb(166, 120, 125)50%, rgb(59, 189, 240)100%);
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    height: 80px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*media queries tablette*/
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    header {
+        background-size: 120%;
+        transition: height .4s;
+    }
+
+    header .menu img{
+        max-height: 45px;
+        width: auto;
+        margin-left: -5px;
+        margin-top: -10px;
+    }
+
+    h1 {
+        font-size: 70px;
+        padding: 0 30px 0;
+    }
+
+    header .txt h2{
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    header .txt a {
+        display: none;
+    }
+
+    section#avantage {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    section#fonction li {
+        padding: 10px 0px;
+    }
+    
+
+    section#fonction img {
+        max-height: 270px;
+        width: auto;
+    }
+
+    
+    section#fonction h2::after {
+        right: 72px;
+    }
+    
+    section#fonction h2::before { 
+        right: 20px;
+    }
+
+    
+    section#fonction {
+        padding: 10px;
+    }
+
+    section#fonction li:nth-of-type(odd) img{
+        padding-left: 10px;
+        
+    }
+
+    section#fonction li:nth-of-type(even) {
+        flex-direction: row;
+    }
+    
+    section#fonction li:nth-of-type(even) img {
+        padding-right: 10px;
+    }
+
+    section#app {
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    section#app img{
+        display: none;
+    }
+
+    /* menu burger tablette */
+
+    .material-icons {
+        font-size: 24px;
+        margin-right: 12px;
+    }
+
+    header .menu img {
+        max-height: 30px;
+        margin: 10px 0 0 12px;
+    }
+
+    header .menu ul {
+        display: block;
+    }
+
+    header .menu ul li {
+        margin-left: 0;
+    }
+
+    header .menu {
+        background: rgba(0, 0, 0, 0);
+        color: #fff;
+        height: 50px;
+        position: relative;
+        display: block;
+        padding: 0;
+    }
+
+    .menu a.btn {
+        color: rgba(124, 40, 99, 0);
+        background: white
+    }
+
+    .menu nav {
+        background: inherit;
+        font-size: 20px;
+        height: 0;
+        overflow: hidden;
+        text-transform: uppercase;
+        transition: height .2s;
+        text-align: center;
+    }
+
+    .menu nav>* {
+        display: block;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .menu nav li {
+        margin-bottom: 20px;
+    }
+
+    .menu .burger {
+        display: block;
+        appearance: none;
+        /*pour ne pas que la checkbox prenne son apparence par défaut*/
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        color: inherit;
+        cursor: pointer;
+        font-family: 'Material Icons';
+        font-size: 30px;
+        line-height: 50px;
+        margin: 0;
+        outline: 0;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        right: 10px;
+        width: 50px;
+    }
+
+    .menu .burger::before {
+        content: 'menu';
+    }
+
+    .menu .burger:checked::before {
+        content: 'close';
+    }
+     
+    .menu .burger:checked+nav {
+        height: auto;
+        padding-bottom: 50px;
+        background-color: #114357;  
+    }
+    
+}
+
+
+
+
+
+/*media queries mobile*/
+@media screen and (max-width: 767px) {
+
+    header {
+        background-size: 170%;
+        transition: height .4s;
+    }
+
+    header .menu img{
+        max-height: 33px;
+        width: auto;
+        margin-left: -30px;
+        margin-top: -20px;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding: 0 30px 0;
+        margin-top: -10px;
+    }
+
+    header .txt h2{
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    header .txt a {
+        display: none;
+    }
+
+    article#description {
+        flex-direction: column;
+    }
+
+    article#description {
+        padding-top: 120px;
+    }
+
+    article#description div {
+        padding-top: 40px;
+    }
+
+    section#avantage {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px 20px;
+    }
+
+    section#avantage li{
+        width: 100%;
+    }
+
+    section#fonction h2 {
+        max-width: 300px;
+        padding-bottom: 50px;
+    }
+
+    section#fonction h2::after {
+        width: 250px;
+        right: 0px;
+    }
+    
+    section#fonction h2::before { 
+        width: 185px;
+        margin-top: 100px;
+        right: -30px;
+    }
+
+    section#fonction h3 {
+        font-size: 27px;
+    }
+
+    section#fonction li {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    section#fonction li:nth-of-type(even) {
+        flex-direction: column;
+    }
+
+    section#fonction li img {
+        align-items: center;
+    }
+
+    section#app {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-bottom: 60px;
+        margin-top: 70px;
+    }
+
+    section#app article{
+        padding: 10px 15px;
+    }
+
+    section#app img{
+        order: -1;
+    }
+    section#app a {
+        margin-bottom: 9px;
+    }
+
+
+    /* menu burger mobile */
+
+    .material-icons {
+        font-size: 24px;
+        margin-right: 12px;
+    }
+
+    header .menu img {
+        max-height: 30px;
+        margin: 10px 0 0 12px;
+    }
+
+    header .menu ul {
+        display: block;
+    }
+
+    header .menu ul li {
+        margin-left: 0;
+    }
+
+    header .menu {
+        background: rgba(0, 0, 0, 0);
+        color: #fff;
+        height: 50px;
+        position: relative;
+        display: block;
+        padding: 0;
+    }
+
+    .menu a.btn {
+        color: rgba(124, 40, 99, 0);
+        background: white
+    }
+
+    .menu nav {
+        background: inherit;
+        font-size: 20px;
+        height: 0;
+        overflow: hidden;
+        text-transform: uppercase;
+        transition: height .2s;
+        text-align: center;
+    }
+
+    .menu nav>* {
+        display: block;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .menu nav li {
+        margin-bottom: 20px;
+    }
+
+    .menu .burger {
+        display: block;
+        appearance: none;
+        /*pour ne pas que la checkbox prenne son apparence par défaut*/
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        color: inherit;
+        cursor: pointer;
+        font-family: 'Material Icons';
+        font-size: 30px;
+        line-height: 50px;
+        margin: 0;
+        outline: 0;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        right: 10px;
+        width: 50px;
+    }
+
+    .menu .burger::before {
+        content: 'menu';
+    }
+
+    .menu .burger:checked::before {
+        content: 'close';
+    }
+     
+    .menu .burger:checked+nav {
+        height: auto;
+        padding-bottom: 50px;
+        background-color: #114357;  
+    }
+}
